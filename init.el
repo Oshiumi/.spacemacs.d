@@ -62,7 +62,6 @@ values."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
      syntax-checking
      auto-completion
      ;; version-control
@@ -320,6 +319,7 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq python-indent-offset 2)
+  (setq js-indent-level 2)
   )
 
 (defun dotspacemacs/user-config ()
@@ -337,6 +337,9 @@ you should place your code here."
 
   ;; ddskk
   (load-file "~/.spacemacs.d/ddskk.el")
+
+  ;; multi-term
+  (load-file "~/.spacemacs.d/multi-term.el")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
