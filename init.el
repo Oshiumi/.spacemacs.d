@@ -323,6 +323,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq python-indent-offset 2)
   (setq js-indent-level 2)
+  (setq ruby-insert-encoding-magic-comment nil)
   )
 
 (defun dotspacemacs/user-config ()
