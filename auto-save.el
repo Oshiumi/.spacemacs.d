@@ -1,7 +1,7 @@
 (require 'auto-save-buffers-enhanced)
 
-;;; 1秒後に保存
-(setq auto-save-buffers-enhanced-interval 1)
+;;; 0.5秒後に保存
+(setq auto-save-buffers-enhanced-interval 0.5)
 ;;; 特定のファイルのみ有効にする
 (setq auto-save-buffers-enhanced-include-regexps '(".+")) ;全ファイル
 ;; not-save-fileと.ignoreは除外する
