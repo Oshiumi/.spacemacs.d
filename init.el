@@ -43,8 +43,8 @@ values."
      csv
      nim
      java
-     markdown
      javascript
+     (markdown :variables markdown-live-preview-engine 'vmd)
      yaml
      ivy
      ruby
@@ -59,7 +59,6 @@ values."
      ;; better-deults
      emacs-lisp
      git
-     ;; markdown
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
