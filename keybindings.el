@@ -3,3 +3,4 @@
 (keyboard-translate ?\C-x ?\C-t)
 (global-unset-key "\C-j")
 (keyboard-translate ?\C-h ?\C-?)
+(global-set-key "\C-H" 'backward-kill-word)
