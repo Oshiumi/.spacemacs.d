@@ -15,6 +15,7 @@
 (auto-save-buffers-enhanced t)
 
 (defun commit-scratch ()
+  (interactive)
   (shell-command "cd /Users/toshiumi/.emacs.d/private/scratch/ && git add scratch && git commit -m save"))
 
 (add-hook 'kill-emacs-hook 'commit-scratch)
