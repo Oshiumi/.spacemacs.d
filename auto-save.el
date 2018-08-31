@@ -10,7 +10,7 @@
 ;;; *scratch*も ~/.emacs.d/private/scratch/scratch に自動保存
 (setq auto-save-buffers-enhanced-save-scratch-buffer-to-file-p t)
 (setq auto-save-buffers-enhanced-file-related-with-scratch-buffer
-       (locate-user-emacs-file "private/scratch/scratch"))
+       (locate-user-emacs-file "~/scratch/scratch"))
 
 (auto-save-buffers-enhanced t)
 
