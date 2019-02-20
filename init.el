@@ -74,6 +74,7 @@ values."
                                       auto-save-buffers-enhanced
                                       dockerfile-mode
                                       ddskk
+                                      exec-path-from-shell
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -356,6 +357,9 @@ you should place your code here."
 
   ;; window-risizer
   (load-file "~/.spacemacs.d/window-resizer.el")
+
+  (when (memq window-system '(mac ns x))
+    (exec-path-from-shell-initialize))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
