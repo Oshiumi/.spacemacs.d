@@ -325,6 +325,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (setq js-indent-level 2)
   (setq ruby-insert-encoding-magic-comment nil)
   (setq history-length 100)
+  (setq multi-term-program "/usr/local/bin/zsh")
   (put 'minibuffer-history 'history-length 50)
   (put 'evil-ex-history 'history-length 50)
   (put 'kill-ring 'history-length 25)
