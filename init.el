@@ -31,6 +31,9 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     latex
+     react
+     sql
      clojure
      haskell
      elixir
@@ -50,6 +53,7 @@ values."
      ruby
      ruby-on-rails
      git
+     github
      python
      html
      shell
@@ -58,7 +62,6 @@ values."
      ess
      ;; better-deults
      emacs-lisp
-     git
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
