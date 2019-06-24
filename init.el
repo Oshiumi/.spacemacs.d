@@ -312,6 +312,7 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
+   dotspacemacs-mode-line-theme 'spacemacs
    ))
 
 (defun dotspacemacs/user-init ()
