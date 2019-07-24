@@ -371,9 +371,14 @@ you should place your code here."
   ;; window-risizer
   (load-file "~/.spacemacs.d/window-resizer.el")
 
+  ;; search-macos-dict
+  (load-file "~/.spacemacs.d/search-macos-dict.el")
+
+  ;; rubocop
+  ;; (load-file "~/.spacemacs.d/rubocop.el")
+
   (when (memq window-system '(mac ns x))
-    (exec-path-from-shell-initialize))
-  )
+    (exec-path-from-shell-initialize)))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
