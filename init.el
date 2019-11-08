@@ -375,7 +375,7 @@ you should place your code here."
   (load-file "~/.spacemacs.d/search-macos-dict.el")
 
   ;; rubocop
-  ;; (load-file "~/.spacemacs.d/rubocop.el")
+  (load-file "~/.spacemacs.d/rubocop.el")
 
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize)))
