@@ -30,18 +30,16 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
+   '(php
+     typescript
+     search-engine
      latex
      react
      sql
      clojure
      haskell
      elixir
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
+     protobuf
      org
      csv
      nim
@@ -78,6 +76,8 @@ values."
                                       dockerfile-mode
                                       ddskk
                                       exec-path-from-shell
+                                      graphql-mode
+                                      company-tabnine
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -333,8 +333,10 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  (setq python-indent-offset 2)
+  (setq python-indent-offset 4)
+  (setq typescript-indent-level 2)
   (setq js-indent-level 2)
+  (setq typescript-indent-level 2)
   (setq ruby-insert-encoding-magic-comment nil)
   (setq history-length 100)
   (setq multi-term-program "/usr/local/bin/zsh")

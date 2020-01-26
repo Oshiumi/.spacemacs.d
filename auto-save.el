@@ -1,7 +1,7 @@
 (require 'auto-save-buffers-enhanced)
 
 ;;; 0.5秒後に保存
-(setq auto-save-buffers-enhanced-interval 0.5)
+(setq auto-save-buffers-enhanced-interval 0.1)
 
 ;;; Wroteのメッセージを抑制
 ;;; !!!これを有効にするとauto-revertが効かなくなる!!!
