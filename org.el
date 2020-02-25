@@ -1,6 +1,6 @@
 ;; org
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "WIP(w)" "|" "DONE(d)" "SOMEDAY(s)")))
+      '((sequence "TODO(t)" "WIP(w)" "WAIT(a)" "|" "DONE(d)" "SOMEDAY(s)")))
 (setq org-hide-leading-stars t)
 (setq org-src-lang-modes '())
 (defun show-org-buffer (file)
@@ -21,4 +21,7 @@
       '(("n" "Note" entry (file+headline "~/org/notes.org" "Notes")
          "* %?\nEntered on %U\n %i\n %a")
         ("t" "Task" entry (file+headline "~/org/notes.org" "Tasks")
-         "* TODO %?\nEntered on %U\n %i\n %a")))
+         "* TODO %?\nEntered on %U\n %i\n %a")
+        ("i" "Issue" entry (file+headline "~/org/notes.org" "Issues")
+         "* %?\n** Why\n** What\n")))
+(setq org-use-speed-commands t)
