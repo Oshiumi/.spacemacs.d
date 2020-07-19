@@ -1,6 +1,7 @@
 ;; org
+(require 'org-tempo)
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "WIP(w)" "WAIT(a)" "|" "DONE(d)" "SOMEDAY(s)")))
+      '((sequence "TODO(t)" "WIP(w)" "WAIT(a)" "REVIEW(r)" "|" "DONE(d)" "SOMEDAY(s)")))
 (setq org-hide-leading-stars t)
 (setq org-src-lang-modes '())
 (defun show-org-buffer (file)
@@ -22,6 +23,14 @@
          "* %?\nEntered on %U\n %i\n %a")
         ("t" "Task" entry (file+headline "~/org/notes.org" "Tasks")
          "* TODO %?\nEntered on %U\n %i\n %a")
-        ("i" "Issue" entry (file+headline "~/org/notes.org" "Issues")
+        ("m" "Meeting" entry (file+headline "~/org/notes.org" "Meeting")
          "* %?\n** Why\n** What\n")))
+
+(setq-default dotspacemacs-configuration-layers '(
+                                                  (org :variables org-enable-github-support t)))
+
+
 (setq org-use-speed-commands t)
+(add-to-list 'org-speed-commands-user
+             '("d" org-deadline)
+             )
