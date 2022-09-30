@@ -1,6 +1,5 @@
 (setq auto-revert-check-vc-info t)
-
-(setq auto-revert-interval 1)
+(setq auto-revert-interval 3)
 
 ;; (add-hook 'find-file-hook
 ;;           '(lambda ()

@@ -31,6 +31,44 @@
 
 
 (setq org-use-speed-commands t)
-(add-to-list 'org-speed-commands-user
-             '("d" org-deadline)
+
+(add-to-list 'org-speed-commands
+             '("S" call-interactively 'org-schedule)
+             '("d" call-interactively 'org-deadline)
              )
+
+
+;; (defun github-task-from-yank ()
+;;   github-task((yank))
+;;   )
+
+;; (defun github-task (text)
+;;   (if (string-match "github" text)
+;;     )
+;;   )
+
+;; (defun gh-url-type (url)
+;;   (if (string-match "pull" 'url)
+;;       "pull"
+;;     (if (string-match "issue" 'url)
+;;         "issue"
+;;       (error "Unknown url")
+;;       )
+;;       )
+;;   )
+
+;; (defun gh-view (url)
+;;   (interactive)
+;;   (shell-command-to-string
+;;    (mapconcat #'shell-quote-argument
+;;               (list "gh" (gh-url-type url) "view" url)
+;;               " ")))
+
+;; (yank)
+;; (gh-view (yank))
+;; (gh-url-type )
+;; (yank-pop)
+
+;; (car kill-ring)
+;; (let ((url (car kill-ring)))
+;;   )
